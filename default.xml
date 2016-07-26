@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="aosp"
+    fetch="https://android.googlesource.com"
+    review="android-review.googlesource.com"
+    revision="refs/tags/android-6.0.1_r53" />
+
+  <default remote="aosp" sync-c="true" sync-j="4" />
+
+  <!-- Clang -->
+  <project name="platform/prebuilts/clang/darwin-x86/host/3.6"
+    path="clang/darwin-x86/host/3.6"
+    groups="darwin"
+    clone-depth="1"
+    remote="aosp" />
+
+  <project name="platform/prebuilts/clang/linux-x86/host/3.6"
+    path="clang/linux-x86/host/3.6"
+    groups="linux"
+    clone-depth="1"
+    remote="aosp" />
+
+  <!-- GCC/G++ :: Darwin -->
+  <project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9"
+    path="gcc/darwin-x86/aarch64/aarch64-linux-android-4.9"
+    groups="darwin,arm"
+    clone-depth="1"
+    remote="aosp" />
+  <project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8"
+    path="gcc/darwin-x86/arm/arm-eabi-4.8"
+    groups="darwin,arm"
+    clone-depth="1"
+    remote="aosp" />
+  <project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9"
+    path="gcc/darwin-x86/arm/arm-linux-androideabi-4.9"
+    groups="darwin,arm"
+    clone-depth="1"
+    remote="aosp" />
+  <project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1"
+    path="gcc/darwin-x86/host/i686-apple-darwin-4.2.1"
+    groups="darwin"
+    clone-depth="1"
+    remote="aosp" />
+ <project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9"
+   path="gcc/darwin-x86/mips/mips64el-linux-android-4.9"
+   groups="darwin,mips,notdefault"
+   clone-depth="1"
+   remote="aosp" />
+ <project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9"
+   path="gcc/darwin-x86/x86/x86_64-linux-android-4.9"
+   groups="darwin,x86"
+   clone-depth="1"
+   remote="aosp" />
+
+ <!-- GCC/G++ :: Linux -->
+ <project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"
+   path="gcc/linux-x86/aarch64/aarch64-linux-android-4.9"
+   groups="linux,arm"
+   clone-depth="1"
+   remote="aosp" />
+ <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"
+   path="gcc/linux-x86/arm/arm-eabi-4.8"
+   groups="linux,arm"
+   clone-depth="1"
+   remote="aosp" />
+ <project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"
+   path="gcc/linux-x86/arm/arm-linux-androideabi-4.9"
+   groups="linux,arm"
+   clone-depth="1"
+   remote="aosp" />
+ <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8"
+   path="gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8"
+   groups="linux"
+   clone-depth="1"
+   remote="aosp" />
+ <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8"
+   path="gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8"
+   groups="linux"
+   clone-depth="1"
+   remote="aosp" />
+ <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8"
+   path="gcc/linux-x86/host/x86_64-w64-mingw32-4.8"
+   groups="pdk-fs"
+   clone-depth="1"
+   remote="aosp" />
+ <project name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9"
+   path="gcc/linux-x86/mips/mips64el-linux-android-4.9"
+   groups="linux,mips,notdefault"
+   clone-depth="1"
+   remote="aosp" />
+ <project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9"
+   path="gcc/linux-x86/x86/x86_64-linux-android-4.9"
+   groups="linux,x86"
+   clone-depth="1"
+   remote="aosp" />
+</manifest>
